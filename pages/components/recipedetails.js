@@ -5,6 +5,10 @@ import "semantic-ui-css/semantic.min.css";
 import styles from "@/styles/recipe.module.scss";
 
 const RecipeDetails = ({ recipe }) => {
+  if (!recipe || !recipe.id) {
+    return <div className={styles.recipe}>Recipe not found</div>;
+  }
+
   const recipeId = parseInt(recipe.id);
 
   const selectedRecipe = recipes.find((r) => r.id === recipeId);

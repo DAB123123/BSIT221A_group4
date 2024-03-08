@@ -1,6 +1,9 @@
 import Link from "next/link";
 
 function RecipeCard({ recipe }) {
+  if (!recipe || !recipe.id) {
+  }
+
   return (
     <div className="column">
       <div className="container">
