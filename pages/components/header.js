@@ -13,7 +13,6 @@ function Header({ searchQuery, handleSearchInputChange }) {
         value={searchQuery}
         onChange={handleSearchInputChange}
       />
-      <i className="fas fa-search search-icon"></i>
     </section>
   );
 }
